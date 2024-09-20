@@ -9,7 +9,6 @@ function App() {
   const [pokemonArray, setPokemonArray] = useState([]); 
   const [filteredPokemonArray, setFilteredPokemonArray] = useState([]); 
   const {searchValue} = useModal()
-
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -35,7 +34,7 @@ function App() {
       );
       setFilteredPokemonArray(filtered);
     }
-  }, [searchValue, pokemonArray]);
+  }, [searchValue]);
 
   return (
     <>
