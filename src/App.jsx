@@ -4,9 +4,14 @@ import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import Card from './components/Card/Card'
 import axios from 'axios'
+import { useModal } from './context/modal-context'
 
 function App() {
   const [pokemonArray,setPokemonArray] = useState([])
+  const {searchValue} = useModal()
+
+  console.log(searchValue)
+
   useEffect(() => {
     const fetchData = async () => {
         try {
