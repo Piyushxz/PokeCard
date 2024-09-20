@@ -111,13 +111,151 @@ body{
     flex-direction: column;
     gap: 8px;
 }
+.type-container{
+    display:flex;
+    flex-direction:row;
 
-.genre{
-    font-size: 0.875rem;
+
+    flex-wrap:wrap;
+    
+
+}
+.grass{
+    font-size: 1rem;
+    background-color:green;
+     margin-left:10px; 
+    padding:10px;
+    border-radius:5px;
+}
+.fire{
+    font-size: 1rem;
+    background-color:red;
+     margin-left:10px; 
+    padding:10px;
+    border-radius:5px;
+}
+.water{
+    font-size: 1rem;
+    background-color:#007FFF;
+     margin-left:10px; 
+    padding:10px;
+    border-radius:5px;
+}
+
+.poison{
+    font-size: 1rem;
+    background-color:purple;
+     margin-left:10px; 
+    padding:10px;
+    border-radius:5px;
+}
+
+.ice{
+    font-size: 1rem;
+    background-color:#89CFF0;
+     margin-left:10px; 
+    padding:10px;
+    border-radius:5px;
+}
+.normal{
+    font-size: 1rem;
+    background-color:white;
+    color:black;
+     margin-left:10px; 
+    padding:10px;
+    border-radius:5px;
+}
+.flying{
+    font-size: 1rem;
+    background-color:#808080 ;
+    color:black;
+     margin-left:10px; 
+    padding:10px;
+    border-radius:5px;
+}
+.bug{
+    font-size: 1rem;
+    background-color: #006400;
+    
+     margin-left:10px; 
+    padding:10px;
+    border-radius:5px;
+}
+.fairy{
+    font-size: 1rem;
+    background-color: #FF69B4;
+    
+     margin-left:10px; 
+    padding:10px;
+    border-radius:5px;
+    
+}
+.rock{
+    font-size: 1rem;
+    background-color: #8B4513	;
+    
+     margin-left:10px; 
+    padding:10px;
+    border-radius:5px;
+    
+}
+.ground{
+    font-size: 1rem;
+    background-color: #DAA520	;
+    
+     margin-left:10px; 
+    padding:10px;
+    border-radius:5px;
+    
+}
+.electric{
+    font-size: 1rem;
+    background-color:  #FFFF00		;
+    color:black;
+     margin-left:10px; 
+    padding:10px;
+    border-radius:5px;
+    
+   
+}
+.steel{
+    font-size: 1rem;
+    background-color: #71797E;
+    color:black;
+     margin-left:10px; 
+    padding:10px;
+    border-radius:5px;
+}
+.psychic{
+    font-size: 1rem;
+    background-color:  #F9629F;
+    color:black;
+     margin-left:10px; 
+    padding:10px;
+    border-radius:5px;
+   
+}
+.ghost{
+    font-size: 1rem;
+    background-color: #4B0082;
+    color:black;
+     margin-left:10px; 
+    padding:10px;
+    border-radius:5px;
+    
+}
+.fighting{
+    font-size: 1rem;
+    background-color: #D2691E	;
+    color:black;
+     margin-left:10px; 
+    padding:10px;
+    border-radius:5px;
+    
 }
 
 .title{
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 
 .ratings{

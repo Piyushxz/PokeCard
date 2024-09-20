@@ -6,7 +6,7 @@ const Card = ({data}) =>{
         const fetchData = async () => {
             try {
                 const response = await axios.get(data.url);
-                console.log(response.data)
+                 console.log(response.data?.types)
                 setPokemon(response.data)
             } catch (error) {
                 console.error("Error fetching data:", error);
@@ -26,11 +26,14 @@ const Card = ({data}) =>{
                 </div>
                 <div className="movie-details">
                     <p className="title"> {pokemon?.name}</p>
+                    <div className="type-container">
                     {
                         pokemon?.types?.map((typeObj,index)=>(
-                            <p key={index} className="genre">{typeObj.type.name}</p>
+                            <p key={index} className={`${typeObj.type.name}`}>{typeObj.type.name}</p>
                         ))
                     }
+                    </div>
+
                 </div>
             </div>
         </>
