@@ -6,6 +6,13 @@ const modalReducer = (state,{type,payload}) =>{
                 searchValue : payload
             }
 
+        case "OPEN_MODAL":
+            return{
+                ...state,
+                isInfoModalOpen : !state.isInfoModalOpen,
+                pokemon:payload
+            }
+
         default:
             return state;
     }

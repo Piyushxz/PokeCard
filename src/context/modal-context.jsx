@@ -2,7 +2,9 @@ import {  createContext,useContext,useReducer } from "react";
 import modalReducer from "../reducer/modalReducer";
 
 const initialValue = {
-    searchValue:""
+    isInfoModalOpen:false,
+    searchValue:"",
+    pokemon:null
 }
 
 const ModalContext = createContext(initialValue)
@@ -10,10 +12,10 @@ const ModalContext = createContext(initialValue)
 
 const ModalProvider = ({children}) =>{
 
-    const [{searchValue},modalDispatch] = useReducer(modalReducer,initialValue)
+    const [{searchValue,isInfoModalOpen,pokemon},modalDispatch] = useReducer(modalReducer,initialValue)
 
     return(
-        <ModalContext.Provider value={{searchValue,modalDispatch}}>
+        <ModalContext.Provider value={{isInfoModalOpen,searchValue,pokemon,modalDispatch}}>
             {children}
         </ModalContext.Provider>
     )

@@ -4,11 +4,14 @@ import Navbar from './components/Navbar/Navbar';
 import Card from './components/Card/Card';
 import axios from 'axios';
 import { useModal } from './context/modal-context';
+import Modal from './components/Modal/Modal';
 
 function App() {
   const [pokemonArray, setPokemonArray] = useState([]); 
   const [filteredPokemonArray, setFilteredPokemonArray] = useState([]); 
-  const {searchValue} = useModal()
+  const {searchValue,isInfoModalOpen,pokemon} = useModal()
+
+  console.log(isInfoModalOpen)
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -41,9 +44,12 @@ function App() {
       <Navbar />
       <div className='main'>
         {filteredPokemonArray.map((pokemon, index) => (
-          <Card key={index} data={{ url: pokemon.url }} />
+          <Card  key={index} data={{ url: pokemon.url }}  />
         ))}
       </div>
+      {
+        isInfoModalOpen && <Modal/> 
+      }
     </>
   );
 }
