@@ -75,6 +75,10 @@ const Modal = ( ) =>{
 
                 </div>
 
+                    <div className="details">
+                        <h2 className="detail">Height: {pokemon.height} inch</h2>
+                        <h2 className="detail">Weight: {pokemon.weight} lbs</h2>
+                    </div>
 
                 
             </div>
